@@ -1,20 +1,15 @@
 import React from 'react';
-import Loader from './Loader';
-import usePlayerByUrlService from "../services/usePlayerByUrlService";
+import usePlayersService from "../services/usePlayersService";
 
-export interface Props {
-    url: string;
-    onClose(): void;
-}
-
-const Player: React.FC<Props> = ({ url, onClose }) => {
-    const service = usePlayerByUrlService(url);
+const Player: React.FC = () => {
+    const service = usePlayersService();
 
     return (
         <div className="player-modal-container">
-            <div className="player-modal-background" onClick={onClose} />
+            <div className="player-modal-background"/>
 
-            {service.status === 'loading' && <Loader />}
+            {service.status === 'loading'}
+            <p>{service.status}</p>
 
             {service.status === 'loaded' && (
                 <div className="Player">

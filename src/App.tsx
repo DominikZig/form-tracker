@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import Players from "./components/Players";
+import Player from "./components/Player";
 
 class App extends Component {
     render() {
@@ -12,7 +12,7 @@ class App extends Component {
                     </div>
                 </header>
                 <div className="container">
-                    <Players />
+                    <Player />
                 </div>
             </div>
         );

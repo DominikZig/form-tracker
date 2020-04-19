@@ -2,12 +2,8 @@ import {useEffect, useState} from "react";
 import {Service} from "../types/Service";
 import {Player} from "../types/Player";
 
-export interface Players {
-    results: Player[];
-}
-
 const usePlayersService = () => {
-    const [result, setResult] = useState<Service<Players>>({
+    const [result, setResult] = useState<Service<Player>>({
         status: 'loading'
     });
 
