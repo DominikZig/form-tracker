@@ -20,3 +20,12 @@
 .navbar-item {
   font-weight: bold;
 }
+
+.card {
+  width: 20%;
+}
+
+p {
+  font-weight: bold;
+  font-size: 15px;
+}

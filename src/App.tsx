@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import './App.css';
 import '../node_modules/bulma/css/bulma.css';
 import Player from "./components/Player";
-import linkedin from './linkedin-logo.png';
-import github from './GitHub-logo.png';
+import linkedin from './resources/linkedin-logo.png';
+import github from './resources/GitHub-logo.png';
 
 class App extends Component {
     render() {
