@@ -4,6 +4,9 @@ import '../node_modules/bulma/css/bulma.css';
 import Player from "./components/Player";
 import linkedin from './resources/linkedin-logo.png';
 import github from './resources/GitHub-logo.png';
+import ronaldo from "./resources/ronaldo.jpg";
+import dybala from "./resources/dybala.png";
+import higuain from "./resources/higuain.webp";
 
 class App extends Component {
     render() {
@@ -37,8 +40,10 @@ class App extends Component {
                 <header className="header">
                         <h1 className="title">Football Player Form Tracker </h1>
                 </header>
-                <div className="container">
-                    <Player />
+                <div className="columns">
+                    <Player playerId={44} photo={ronaldo}/>
+                    <Player playerId={2046} photo={dybala}/>
+                    <Player playerId={2047} photo={higuain}/>
                 </div>
             </div>
         );

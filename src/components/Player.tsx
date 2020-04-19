@@ -1,33 +1,27 @@
 import React from 'react';
 import '../App.css';
-import usePlayersService from "../services/usePlayersService";
-import ronaldo from "../resources/ronaldo.jpg";
+import usePlayerService from "../services/usePlayerService";
 
-const Player: React.FC = () => {
-    const service = usePlayersService();
+export interface Props {
+    playerId: number;
+    photo: string;
+}
+
+const Player: React.FC<Props> = ( {playerId, photo} ) => {
+    const service = usePlayerService(playerId);
 
     return (
-        <div className="container">
-            {service.status === 'loading'}
-            <p>{service.status}</p>
-
+        <div className="column">
             {service.status === 'loaded' && (
-                <div className="player card">
+                <div className="card">
                     <div className="card-image">
                         <figure>
-                            <img src={ronaldo} alt="ronaldo"/>
+                            <img src={photo} alt="ronaldo"/>
                         </figure>
                     </div>
                     <div className="card-content">
-                        <div className="media">
-                            <div className="media-left">
-                            </div>
-                            <div className="media-content">
-                                <p className="title is-4">{service.payload.name}</p>
-                            </div>
-                        </div>
-
                         <div className="content">
+                            <p className="title is-4">{service.payload.name}</p>
                             <p>Nationality: {service.payload.nationality}</p>
                             <p>Position: {service.payload.position}</p>
                             <p>Date of Birth: {service.payload.dateOfBirth}</p>

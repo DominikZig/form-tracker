@@ -2,8 +2,7 @@ import {useEffect, useState} from "react";
 import {Service} from "../types/Service";
 import {Player} from "../types/Player";
 
-const usePlayersService = () => {
-    let playerId = 44;
+const usePlayerService = (playerId: number) => {
     const [result, setResult] = useState<Service<Player>>({
         status: 'loading'
     });
@@ -21,4 +20,4 @@ const usePlayersService = () => {
     return result;
 };
 
-export default usePlayersService;
+export default usePlayerService;
