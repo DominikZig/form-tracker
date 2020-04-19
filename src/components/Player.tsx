@@ -5,9 +5,7 @@ const Player: React.FC = () => {
     const service = usePlayersService();
 
     return (
-        <div className="player-modal-container">
-            <div className="player-modal-background"/>
-
+        <div className="container">
             {service.status === 'loading'}
             <p>{service.status}</p>
 
