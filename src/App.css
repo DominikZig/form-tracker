@@ -21,6 +21,10 @@
   font-weight: bold;
 }
 
+.navbar-item:hover {
+  color: seagreen !important;
+}
+
 .title {
   margin-top: 15px;
   margin-bottom: 20px;
@@ -48,4 +52,39 @@ p {
 
 .modal-background, .modal-card-body {
   background-color: white !important;
+}
+
+.modal-card {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+#modal-img {
+  height: 100%;
+  width: 30%;
+  float: left;
+}
+
+#stats {
+  margin-left: 30%;
+  border: 5px solid aquamarine !important;
+}
+
+h2 {
+  padding-left: 5% !important;
+  text-align: left;
+  font-size: 30px !important;
+}
+
+#player-stats-header {
+  text-align: left;
+}
+
+.delete {
+  margin-left: 98%;
+  float: right !important;
 }

@@ -1,9 +1,10 @@
 import {useEffect, useState} from "react";
+import {Service} from "../types/Service";
+import {PlayerStats} from "../types/PlayerStats";
 
 const usePlayerStatsService = () => {
-    let [playerStats, setPlayerStats] = useState({
-        goalsScored: 0,
-        gamesPlayed: 0
+    const [playerStats, setPlayerStats] = useState<Service<PlayerStats>>({
+        status: 'loading'
     });
 
     const proxyUrl = "https://cors-anywhere.herokuapp.com/";
@@ -12,11 +13,9 @@ const usePlayerStatsService = () => {
     useEffect(() => {
         fetch(proxyUrl + url)
             .then(response => response.json())
-            .then(response => {
-                console.log(response.api["players"][0].goals.total);
-                setPlayerStats({goalsScored : response.api["players"][0].goals.total, gamesPlayed: response.api["players"][0].games.appearences});
-            });
-    });
+            .then(response => setPlayerStats({status: 'loaded', payload: response}))
+            .catch(error => setPlayerStats({status: 'error', error}));
+    }, []);
 
     return playerStats;
 };
