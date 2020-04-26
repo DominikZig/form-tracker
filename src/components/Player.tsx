@@ -10,8 +10,11 @@ export interface Props {
 
 const Player: React.FC<Props> = ( {playerId, photo} ) => {
     const service = usePlayerService(playerId);
-
     const [openPlayerStats, setOpenPlayerStats] = useState(false);
+
+    const handleClosePlayerStats = () => {
+        setOpenPlayerStats(false);
+    }
 
     return (
         <div className="column">
@@ -41,7 +44,7 @@ const Player: React.FC<Props> = ( {playerId, photo} ) => {
                 </div>
             )}
 
-            {(openPlayerStats) ? <PlayerStats/> : ""}
+            <PlayerStats isVisible={openPlayerStats} handleClosePlayerStats={handleClosePlayerStats}/>
         </div>
     );
 };

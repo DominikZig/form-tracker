@@ -1,17 +1,21 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import usePlayerStatsService from "../services/usePlayerStatsService";
 import ronaldopose from "../resources/ronaldo-pose.png";
 
-const PlayerStats: React.FC = () => {
+function PlayerStats(props) {
     const service = usePlayerStatsService();
-    const [visible, setVisible] = useState(true);
+    const [visible, setVisible] = useState(props.isVisible);
+
+    useEffect(() => {
+        setVisible(props.isVisible);
+    }, [props.isVisible]);
 
     return (
         <>
             {visible &&
                 <div className="modal is-active">
                     <div className="modal-background"/>
-                    <button className="delete" aria-label="close" onClick={() => setVisible(false)}/>
+                    <button className="delete" aria-label="close" onClick={props.handleClosePlayerStats}/>
                     <div className="modal-content">
                         {service.status === 'loaded' && (
                             <article className="media">
