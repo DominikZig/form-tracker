@@ -76,3 +76,8 @@ h2 {
   margin-left: 98%;
   float: right !important;
 }
+
+#headshot {
+  height: 50%;
+  width: 50%;
+}

@@ -6,9 +6,11 @@ import PlayerStats from "./PlayerStats";
 export interface Props {
     playerId: number;
     photo: string;
+    apiFootballId: number;
+    posephoto: string;
 }
 
-const Player: React.FC<Props> = ( {playerId, photo} ) => {
+const Player: React.FC<Props> = ({playerId, photo, apiFootballId, posephoto} ) => {
     const service = usePlayerService(playerId);
     const [openPlayerStats, setOpenPlayerStats] = useState(false);
 
@@ -23,7 +25,7 @@ const Player: React.FC<Props> = ( {playerId, photo} ) => {
                     <div className="card">
                         <div className="card-image">
                             <figure>
-                                <img src={photo} alt="ronaldo"/>
+                                <img id="headshot" src={photo} alt="photo"/>
                             </figure>
                         </div>
                         <div className="card-content">
@@ -44,7 +46,7 @@ const Player: React.FC<Props> = ( {playerId, photo} ) => {
                 </div>
             )}
 
-            <PlayerStats isVisible={openPlayerStats} handleClosePlayerStats={handleClosePlayerStats}/>
+            <PlayerStats playerId={apiFootballId} isVisible={openPlayerStats} handleClosePlayerStats={handleClosePlayerStats} posephoto={posephoto}/>
         </div>
     );
 };

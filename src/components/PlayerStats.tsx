@@ -1,9 +1,8 @@
 import React, {useEffect, useState} from "react";
 import usePlayerStatsService from "../services/usePlayerStatsService";
-import ronaldopose from "../resources/ronaldo-pose.png";
 
 function PlayerStats(props) {
-    const service = usePlayerStatsService();
+    const service = usePlayerStatsService(props.playerId);
     const [visible, setVisible] = useState(props.isVisible);
 
     useEffect(() => {
@@ -20,7 +19,7 @@ function PlayerStats(props) {
                         {service.status === 'loaded' && (
                             <article className="media">
                                 <div className="media-left">
-                                    <img src={ronaldopose} alt="ronaldo" id="modal-img"/>
+                                    <img src={props.posephoto} alt="pose-photo" id="modal-img"/>
                                 </div>
                                 <div className="media-content">
                                     <h1 id="player-stats-header">Player stats:</h1>
