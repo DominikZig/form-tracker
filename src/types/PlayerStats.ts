@@ -1,5 +1,10 @@
 export interface PlayerStats {
     api: string[];
-    goals: bigint;
-    games: bigint;
+    goals: number;
+    games: number;
+    assists: number;
+    keyPasses: number;
+    passAccuracy: number;
+    dribbleAttempts: number;
+    dribbleSuccess: number;
 }
