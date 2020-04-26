@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "64682317037db0cdcc9a52b0de2414c5",
+    "revision": "9958ba006d0f6036501240d7be2302ac",
     "url": "/form-tracker/index.html"
   },
   {
-    "revision": "331c10252476cb6b5835",
+    "revision": "95f7517801758bf02cde",
     "url": "/form-tracker/static/css/2.cd1899df.chunk.css"
   },
   {
-    "revision": "1c57f40f576b89063928",
+    "revision": "45f1026353a055042aec",
     "url": "/form-tracker/static/css/main.222736d0.chunk.css"
   },
   {
-    "revision": "331c10252476cb6b5835",
-    "url": "/form-tracker/static/js/2.70a08ef7.chunk.js"
+    "revision": "95f7517801758bf02cde",
+    "url": "/form-tracker/static/js/2.3e612569.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/form-tracker/static/js/2.70a08ef7.chunk.js.LICENSE.txt"
+    "url": "/form-tracker/static/js/2.3e612569.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1c57f40f576b89063928",
-    "url": "/form-tracker/static/js/main.c4f80854.chunk.js"
+    "revision": "45f1026353a055042aec",
+    "url": "/form-tracker/static/js/main.e754da42.chunk.js"
   },
   {
     "revision": "d0fb0bc7bf239bb7b6f0",
@@ -94,6 +94,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fc7f191568dc6e7100569647e7256265",
     "url": "/form-tracker/static/media/matuidi.fc7f1915.png"
+  },
+  {
+    "revision": "40bb2154a7013916346cf4625d1e583c",
+    "url": "/form-tracker/static/media/pjanic-pose.40bb2154.png"
   },
   {
     "revision": "2385324dfd906a27ec0d95fddb814e26",

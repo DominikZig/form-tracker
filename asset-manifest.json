@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/form-tracker/static/css/main.222736d0.chunk.css",
-    "main.js": "/form-tracker/static/js/main.c4f80854.chunk.js",
-    "main.js.map": "/form-tracker/static/js/main.c4f80854.chunk.js.map",
+    "main.js": "/form-tracker/static/js/main.e754da42.chunk.js",
+    "main.js.map": "/form-tracker/static/js/main.e754da42.chunk.js.map",
     "runtime-main.js": "/form-tracker/static/js/runtime-main.a219c3fd.js",
     "runtime-main.js.map": "/form-tracker/static/js/runtime-main.a219c3fd.js.map",
     "static/css/2.cd1899df.chunk.css": "/form-tracker/static/css/2.cd1899df.chunk.css",
-    "static/js/2.70a08ef7.chunk.js": "/form-tracker/static/js/2.70a08ef7.chunk.js",
-    "static/js/2.70a08ef7.chunk.js.map": "/form-tracker/static/js/2.70a08ef7.chunk.js.map",
+    "static/js/2.3e612569.chunk.js": "/form-tracker/static/js/2.3e612569.chunk.js",
+    "static/js/2.3e612569.chunk.js.map": "/form-tracker/static/js/2.3e612569.chunk.js.map",
     "index.html": "/form-tracker/index.html",
-    "precache-manifest.30d028248493135fa004c7efb2c4f2cc.js": "/form-tracker/precache-manifest.30d028248493135fa004c7efb2c4f2cc.js",
+    "precache-manifest.9241debf140c064c6f6216b93d78a032.js": "/form-tracker/precache-manifest.9241debf140c064c6f6216b93d78a032.js",
     "service-worker.js": "/form-tracker/service-worker.js",
     "static/css/2.cd1899df.chunk.css.map": "/form-tracker/static/css/2.cd1899df.chunk.css.map",
     "static/css/main.222736d0.chunk.css.map": "/form-tracker/static/css/main.222736d0.chunk.css.map",
-    "static/js/2.70a08ef7.chunk.js.LICENSE.txt": "/form-tracker/static/js/2.70a08ef7.chunk.js.LICENSE.txt",
+    "static/js/2.3e612569.chunk.js.LICENSE.txt": "/form-tracker/static/js/2.3e612569.chunk.js.LICENSE.txt",
     "static/media/bentancur-pose.png": "/form-tracker/static/media/bentancur-pose.04772e74.png",
     "static/media/bernardeschi-pose.png": "/form-tracker/static/media/bernardeschi-pose.050a8db5.png",
     "static/media/bonucci-pose.png": "/form-tracker/static/media/bonucci-pose.df8d4147.png",
@@ -31,6 +31,7 @@
     "static/media/khedira-pose.png": "/form-tracker/static/media/khedira-pose.d6552d43.png",
     "static/media/matuidi-pose.png": "/form-tracker/static/media/matuidi-pose.afcc4e74.png",
     "static/media/matuidi.png": "/form-tracker/static/media/matuidi.fc7f1915.png",
+    "static/media/pjanic-pose.png": "/form-tracker/static/media/pjanic-pose.40bb2154.png",
     "static/media/rabiot-pose.png": "/form-tracker/static/media/rabiot-pose.2385324d.png",
     "static/media/ramsey-pose.png": "/form-tracker/static/media/ramsey-pose.2d27e72c.png",
     "static/media/ramsey.png": "/form-tracker/static/media/ramsey.373953bf.png",
@@ -43,8 +44,8 @@
   "entrypoints": [
     "static/js/runtime-main.a219c3fd.js",
     "static/css/2.cd1899df.chunk.css",
-    "static/js/2.70a08ef7.chunk.js",
+    "static/js/2.3e612569.chunk.js",
     "static/css/main.222736d0.chunk.css",
-    "static/js/main.c4f80854.chunk.js"
+    "static/js/main.e754da42.chunk.js"
   ]
 }
