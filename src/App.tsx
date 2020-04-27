@@ -34,7 +34,7 @@ import cuadradopose from "./resources/cuadrado-pose.png";
 import bernardeschipose from "./resources/bernardeschi-pose.png";
 import rabiotpose from "./resources/rabiot-pose.png";
 import bentancurpose from "./resources/bentancur-pose.png";
-import pjanicpose from "./resources/bentancur-pose.png";
+import pjanicpose from "./resources/pjanic-pose.png";
 import khedirapose from "./resources/khedira-pose.png";
 import ramseypose from "./resources/ramsey-pose.png";
 import matuidipose from "./resources/matuidi-pose.png";

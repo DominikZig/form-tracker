@@ -1,44 +1,31 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Requirements to run:
+- Node 10+
+- Yarn 1.1+
 
-## Available Scripts
+View the project on AWS here: https://dominikzig.github.io/form-tracker/
 
-In the project directory, you can run:
+**Functionality:**
 
-### `yarn start`
+This project allows you to see a football player's form for the current season (currently only for Juventus squad players).
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Technical Info:**
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+The project uses React with TypeScript and modern techniques such as React Hooks.
+It makes use of Bulma CSS framework for styling and Yarn for building and dependency management.
+To display the player data, it makes use of two APIs: Football Data (https://www.football-data.org)
+and API Football (https://www.api-football.com). The project is using the free and development versions 
+respectively and thus is quite limited in the amount of requests which can be sent at any one time.
+Unfortunately, it also means that the data itself can be quite outdated as it is not
+updated as frequently as the paid versions of these APIs.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Once you have the prerequisites installed, in order to run the application locally, in your terminal, run the command:
+```yarn start```
 
-### `yarn build`
+**Screenshots:**
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Squad list example:
+![playersExample](playersExample.PNG)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Individual player stats example:
+![playerStatsExample](playerStatsExample.PNG)
