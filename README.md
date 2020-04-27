@@ -2,7 +2,7 @@ Requirements to run:
 - Node 10+
 - Yarn 1.1+
 
-View the project on AWS here: https://dominikzig.github.io/form-tracker/
+View the project on GitHub Pages here: https://dominikzig.github.io/form-tracker/
 
 **Functionality:**
 
